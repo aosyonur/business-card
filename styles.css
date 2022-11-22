@@ -1,0 +1,102 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Courier New', monospace;
+    background: #262626;
+}
+
+.avatar {
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 1px solid #E7E7E7;
+}
+
+.card {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background: #063A5B;
+    color: #F9F9F9;
+    border-bottom: 6px solid #FF7A8B;
+    border-left: 2px solid #FF7A8B;
+    border-right: 2px solid #FF7A8B;
+    border-top: 1px solid #FF7A8B;
+    border-radius: 50px;
+    overflow: hidden;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+.icons i {
+    text-decoration: none;
+    color: #E7E7E7;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.card i:hover {
+    color: red;
+}
+
+.card:hover {
+    background: #FF7A8B;
+    color: #F9F9F9;
+    border-bottom: 6px solid #063A5B;
+    border-left: 2px solid #063A5B;
+    border-right: 2px solid #063A5B;
+    border-top: 1px solid #063A5B;
+    transition: 1s;
+}
+
+.text {
+    /* visibility: hidden; */
+   max-height: 0;
+   opacity: 0;
+
+}
+
+.card:hover .text {
+    /* visibility: visible; */
+    max-height: 500px;
+    transition: max-height 2s ease-in;
+    opacity: 1;
+}
+
+.card:hover .avatar {
+    border-color: black;
+    transition: border-color 1s ease-in;
+}
+
+/* .icons {
+    display: flex;
+    justify-content: space-around;
+} */
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
